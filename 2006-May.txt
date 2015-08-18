@@ -1,0 +1,81 @@
+From doru.horhat at tagsysrfid.com  Thu May  4 14:22:35 2006
+From: doru.horhat at tagsysrfid.com (Doru HORHAT)
+Date: Thu, 4 May 2006 14:22:35 +0200
+Subject: [FreeXplorer-dev] coucou ...
+Message-ID: <7E9C6BF005FA3D4FAC91EE347B4D29F13311F1@mail.tagsys.net>
+
+Exusez ce petit test pour voir si cette liste est bel et bien utilisée ... ou non ..
+merci 
+Doru.
+ 
+PS: je ne suis pas un grand expert de la programmation mais je my mets quand j'ai le temps .. et je trouve le freexplorer pas tres stable par rapport a dautres mods du genre .. il faudrait que je précise exactement les instabilités que jai remarqués .. ca sera fait ... sinon des fois ca plant e .. et apres plus moyen de redemarrer le freexplorer a aprtir de la freebox et il faut aller le redemarrer sur le PC pour que ca "re-marche" .. 
+ 
+ 
+-------------- section suivante --------------
+Une pièce jointe HTML a été nettoyée...
+URL: <https://lists.berlios.de/pipermail/freexplorer-dev/attachments/20060504/1fb92ea5/attachment.html>
+
+From freexplorer at free.fr  Thu May  4 19:07:20 2006
+From: freexplorer at free.fr (Wizou)
+Date: Thu, 04 May 2006 19:07:20 +0200
+Subject: [FreeXplorer-dev] coucou ...
+In-Reply-To: <7E9C6BF005FA3D4FAC91EE347B4D29F13311F1@mail.tagsys.net>
+References: <7E9C6BF005FA3D4FAC91EE347B4D29F13311F1@mail.tagsys.net>
+Message-ID: <445A34C8.3040400@free.fr>
+
+moi les seuls cas de problèmes que j'ai constaté, c'est quand on met en 
+pause, parfois on a ensuite l'écran d'erreur "VLC a renvoyé une reponse 
+anormale"
+sinon je le trouve plutot stable
+(quelquefois la freebox plante mais ca c'est pas la faute de 
+FreeXplorer... et VLC plante aussi parfois, c'est pas vraiment la faute 
+de FreeXplorer mais peut-etre qu'en lui parlant en mode HTTP plutot 
+qu'en mode RC ca pourrait régler le probleme)
+
+sinon Doru, n'hésite pas à chercher l'origine du/des bugs dans les 
+sources, voire les corriger puisque tu fais partie des developpeurs du 
+projet FreeXplorer
+et décris au mieux ce que tu constate
+
+
+Doru HORHAT a écrit :
+
+> Exusez ce petit test pour voir si cette liste est bel et bien utilisée 
+> ... ou non ..
+>
+> merci
+>
+> Doru.
+>
+>  
+>
+> PS: je ne suis pas un grand expert de la programmation mais je my mets 
+> quand j'ai le temps .. et je trouve le freexplorer pas tres stable par 
+> rapport a dautres mods du genre .. il faudrait que je précise 
+> exactement les instabilités que jai remarqués .. ca sera fait ... 
+> sinon des fois ca plant e .. et apres plus moyen de redemarrer le 
+> freexplorer a aprtir de la freebox et il faut aller le redemarrer sur 
+> le PC pour que ca "re-marche" ..
+>
+>  
+>
+>  
+>
+-------------- section suivante --------------
+Une pièce jointe HTML a été nettoyée...
+URL: <https://lists.berlios.de/pipermail/freexplorer-dev/attachments/20060504/6e18d5df/attachment.html>
+
+From virtualblackfox at gmail.com  Thu May  4 19:23:58 2006
+From: virtualblackfox at gmail.com (Black Fox)
+Date: Thu, 4 May 2006 19:23:58 +0200
+Subject: [FreeXplorer-dev] coucou ...
+In-Reply-To: <7E9C6BF005FA3D4FAC91EE347B4D29F13311F1@mail.tagsys.net>
+References: <7E9C6BF005FA3D4FAC91EE347B4D29F13311F1@mail.tagsys.net>
+Message-ID: <5dabfcac0605041023q6b5061cah1bd30cf14307b948@mail.gmail.com>
+
+> Exusez ce petit test pour voir si cette liste est bel et bien utilisée ? ou
+> non ..
+
+ou non :D
+
+

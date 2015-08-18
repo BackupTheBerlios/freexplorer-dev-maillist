@@ -1,0 +1,17 @@
+From freexplorer at free.fr  Thu Apr 13 23:19:34 2006
+From: freexplorer at free.fr (Wizou)
+Date: Thu, 13 Apr 2006 23:19:34 +0200
+Subject: [FreeXplorer-dev] nouvelle ML cvs
+Message-ID: <443EC066.3010608@free.fr>
+
+il y a maintenant une ML freexplorer-cvs at lists.berlios.de
+qui vous permettra de recevoir la description et le delta de chaque 
+livraison CVS qui a été faite par un développeur
+
+je vous invite à vous y inscrire pour savoir dès que quelqu'un touche au 
+code..
+
+https://lists.berlios.de/mailman/listinfo/freexplorer-cvs
+
+
+

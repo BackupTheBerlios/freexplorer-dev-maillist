@@ -1,0 +1,38 @@
+From virtualblackfox at gmail.com  Wed Oct  5 22:15:10 2005
+From: virtualblackfox at gmail.com (Black Fox)
+Date: Wed, 5 Oct 2005 22:15:10 +0200
+Subject: [FreeXplorer-dev] Hello world
+Message-ID: <5dabfcac0510051315o1fcb9879t968b77047289c120@mail.gmail.com>
+
+Hello juste pour me présenter, je ne sais pas si il y as d'autres
+inscrits à cette liste que wizou, mais en tout les cas, hello tout le
+monde.
+
+PS: Mon pseudo est Virtualblackfox sur le forum.
+
+
+From w.brassart at free.fr  Thu Oct  6 14:10:46 2005
+From: w.brassart at free.fr (lyssia coleene et william)
+Date: Thu, 6 Oct 2005 14:10:46 +0200
+Subject: [FreeXplorer-dev] salut
+Message-ID: <20051006121259.B07D7271DB@smtp2-g19.free.fr>
+
+Tout d abord felicitation pour freexplorer qui est tres pratique je constate
+juste un bug au niveau du mode lirc la possibilite de changer les chaine est
+bien simplement la grille reste presente en arriere plan est il possible de
+la desactivé ou de la rendre transparente 
+
+ 
+
+     Merci d avance
+
+ 
+
+ 
+
+Et encore bravo
+
+-------------- section suivante --------------
+Une pièce jointe HTML a été nettoyée...
+URL: <https://lists.berlios.de/pipermail/freexplorer-dev/attachments/20051006/092711e3/attachment.html>
+

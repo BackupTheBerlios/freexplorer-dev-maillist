@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [FreeXplorer-dev] fonds transparents &amp; unix
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/freexplorer-dev/2006-June/index.html" >
+   <LINK REL="made" HREF="mailto:freexplorer-dev%40lists.berlios.de?Subject=Re%3A%20%5BFreeXplorer-dev%5D%20fonds%20transparents%20%26%20unix&In-Reply-To=%3C5dabfcac0606131421u3a482723j692d906f2fb6e6cb%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000008.html">
+   <LINK REL="Next"  HREF="000010.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[FreeXplorer-dev] fonds transparents &amp; unix
+   </H1>
+    <B>Black Fox
+    </B> 
+    <A HREF="mailto:freexplorer-dev%40lists.berlios.de?Subject=Re%3A%20%5BFreeXplorer-dev%5D%20fonds%20transparents%20%26%20unix&In-Reply-To=%3C5dabfcac0606131421u3a482723j692d906f2fb6e6cb%40mail.gmail.com%3E"
+       TITLE="[FreeXplorer-dev] fonds transparents &amp; unix">virtualblackfox at gmail.com
+       </A><BR>
+    <I>Mar 13 Juin  23:21:45 CEST 2006</I>
+    <P><UL>
+        <LI>Message précédent: <A HREF="000008.html">[FreeXplorer-dev] fonds transparents &amp; unix
+</A></li>
+        <LI>Message suivant: <A HREF="000010.html">[FreeXplorer-dev] fonds transparents &amp; unix
+</A></li>
+         <LI> <B>Messages tri&eacute;s par:</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ objet ]</a>
+              <a href="author.html#9">[ auteur ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>&gt;<i> &gt; J'ai mis du transparent normalement à part si mon gimp à du mal :D
+</I>&gt;<i>
+</I>&gt;<i> ben... je crois que ton gimp a du mal ^^
+</I>
+Même en re-ouvrant le fichier folder.gif par exemple le background est
+bien transparent chez moi (Et pourtant il y à du blanc dans l'image
+donc ça ne peut pas être le blanc [255-255-255] qui est remplacé par
+la transparence)
+
+&gt;<i> ok, n'hesite pas à livrer eventuellement un makefile spécifique pour
+</I>&gt;<i> Linux.. on essayera de maintenir les 2 à jour si on ajoute/retire des
+</I>&gt;<i> fichiers du projets
+</I>
+J'ai buildé monodevelop depuis les sources et re-fait des projets dans
+son format (.mdp) évidement il faudra le maintenir synchronisé avec
+les .csproj ...
+
+&gt;<i> je pense n'avoir utilisé que des fonctions relativement basiques des
+</I>&gt;<i> Forms, donc j'espère que ca marchera correctement
+</I>&gt;<i> ce serait compliqué d'avoir à maintenir 2 interfaces utilisateur en
+</I>&gt;<i> paralelle
+</I>
+Après test il faudras surement une interface différente.
+Mono supporte bien les forms du .Net 1.0 par contre celle du 2.0 il
+lui manque beaucoup de fonctionnalitées pour les supporter.
+
+Je pense que je vais retourner sous windows et séparer l'interface du
+code de chargement de la config puis extraire l'interface dans un
+assembly différent.
+En suite je créerait un FreeXplorerConsole qui ne nécessite pas
+d'interface graphique (Et qui n'est donc configurable qu'en éditant le
+fichier XML) et adapterait tout ça sous linux.
+
+Pour info les quelques choses qui manquent sur la version actuelle de
+mono pour compiler le code à par les forms c'est :
+ - System.IO.File.ReadAllText (
+<A HREF="http://bugzilla.ximian.com/show_bug.cgi?id=77813">http://bugzilla.ximian.com/show_bug.cgi?id=77813</A> ), facile à émuler
+avec un StreamReader.ReadToEnd().
+ - TCPListener.Server car ce membre est privé (Je vais leur envoyer un
+mail mais il faut dabord que je vérifie si il à toujour été public ou
+si c'est un changement dans le 2.0.
+ - La classe Registry et tout ce qui est dans Microsoft.Win32
+(Logique), pour la gestion des types Mime par exemple
+
+Evidement une fois compilé il y auras surement d'autres problèmes à
+l'exécution mais je n'en suis pas là :-D
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Message précédent: <A HREF="000008.html">[FreeXplorer-dev] fonds transparents &amp; unix
+</A></li>
+	<LI>Message suivant: <A HREF="000010.html">[FreeXplorer-dev] fonds transparents &amp; unix
+</A></li>
+         <LI> <B>Messages tri&eacute;s par :</B> 
+              <a href="date.html#9">[ date ]</a>
+              <a href="thread.html#9">[ thread ]</a>
+              <a href="subject.html#9">[ objet ]</a>
+              <a href="author.html#9">[ auteur ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/freexplorer-dev">Plus d'informations sur la liste de diffusion FreeXplorer-dev</a><br>
+</body></html>
+
+

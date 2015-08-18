@@ -1,0 +1,228 @@
+From freexplorer at free.fr  Mon Jun 12 01:29:15 2006
+From: freexplorer at free.fr (Wizou)
+Date: Mon, 12 Jun 2006 01:29:15 +0200
+Subject: [FreeXplorer-dev] fonds transparents & unix
+Message-ID: <448CA74B.3080802@free.fr>
+
+oui, avant la gestion de la transparence des GIF par la freebox était 
+foireux d'où les icones avec des fonds noirs qui maintenant paraissent 
+bizarres,
+mais le firmware a changé et la transparence semble gérée correctement, 
+donc on devrait pouvoir mettre du vrai transparent
+(là t'as mis du blanc je crois)
+
+sinon blackfox, je vois que tu travaille à l'adaptation du code à unix.. 
+c'est chouette !! :)
+
+je n'ai pas linux, donc tu pourra me dire quand ca atteint un stade 
+suffisamment utilisable pour sortir officiellement une version de 
+FreeXplorer compatible Linux ?
+(il faudra voir comment on s'arrange pour compiler cette version, 
+peut-être créer un installeur autour et l'uploader sur BerliOS)
+
+
+
+From virtualblackfox at gmail.com  Tue Jun 13 09:44:02 2006
+From: virtualblackfox at gmail.com (Black Fox)
+Date: Tue, 13 Jun 2006 09:44:02 +0200
+Subject: [FreeXplorer-dev] fonds transparents & unix
+In-Reply-To: <448CA74B.3080802@free.fr>
+References: <448CA74B.3080802@free.fr>
+Message-ID: <5dabfcac0606130044m1fc98df3r1ce6bd2e8827128d@mail.gmail.com>
+
+On 6/12/06, Wizou <freexplorer at free.fr> wrote:
+> oui, avant la gestion de la transparence des GIF par la freebox était
+> foireux d'où les icones avec des fonds noirs qui maintenant paraissent
+> bizarres,
+> mais le firmware a changé et la transparence semble gérée correctement,
+> donc on devrait pouvoir mettre du vrai transparent
+> (là t'as mis du blanc je crois)
+
+J'ai mis du transparent normalement à part si mon gimp à du mal :D
+
+> sinon blackfox, je vois que tu travaille à l'adaptation du code à unix..
+> c'est chouette !! :)
+>
+> je n'ai pas linux, donc tu pourra me dire quand ca atteint un stade
+> suffisamment utilisable pour sortir officiellement une version de
+> FreeXplorer compatible Linux ?
+> (il faudra voir comment on s'arrange pour compiler cette version,
+> peut-être créer un installeur autour et l'uploader sur BerliOS)
+
+Pour l'instant j'ai un peu de mal à le builder sous linux car le seul
+convertisseur de projet VS -> Make qui existe ne fonctionne qu'avec
+des projets VS.Net pas VS2005.
+
+Et la versions de Monodevelop que j'ai ne build que pour C#1.0 donc il
+va faloir que je compile Monodevelop depuis le CVS.
+
+Si non je préviendrait dès que j'arrive à l'utiliser sous linux. La
+partie qui demanderas surement des adaptation est tout ce qui conserne
+la fenêtre de VLC (Afficher / Cacher) et l'interface graphique (Si les
+forms ne fonctionnent pas assez bien je séparerait surement dans 2
+assemblies l'interface et le reste du code pour faire une interface
+GTK.
+
+
+From freexplorer at free.fr  Tue Jun 13 19:17:12 2006
+From: freexplorer at free.fr (Wizou)
+Date: Tue, 13 Jun 2006 19:17:12 +0200
+Subject: [FreeXplorer-dev] fonds transparents & unix
+In-Reply-To: <5dabfcac0606130044m1fc98df3r1ce6bd2e8827128d@mail.gmail.com>
+References: <448CA74B.3080802@free.fr> <5dabfcac0606130044m1fc98df3r1ce6bd2e8827128d@mail.gmail.com>
+Message-ID: <448EF318.8070501@free.fr>
+
+Black Fox a écrit :
+
+> On 6/12/06, Wizou <freexplorer at free.fr> wrote:
+>
+>> oui, avant la gestion de la transparence des GIF par la freebox était
+>> foireux d'où les icones avec des fonds noirs qui maintenant paraissent
+>> bizarres,
+>> mais le firmware a changé et la transparence semble gérée correctement,
+>> donc on devrait pouvoir mettre du vrai transparent
+>> (là t'as mis du blanc je crois)
+>
+>
+> J'ai mis du transparent normalement à part si mon gimp à du mal :D
+
+ben... je crois que ton gimp a du mal ^^
+
+>
+>> sinon blackfox, je vois que tu travaille à l'adaptation du code à unix..
+>> c'est chouette !! :)
+>>
+>> je n'ai pas linux, donc tu pourra me dire quand ca atteint un stade
+>> suffisamment utilisable pour sortir officiellement une version de
+>> FreeXplorer compatible Linux ?
+>> (il faudra voir comment on s'arrange pour compiler cette version,
+>> peut-être créer un installeur autour et l'uploader sur BerliOS)
+>
+>
+> Pour l'instant j'ai un peu de mal à le builder sous linux car le seul
+> convertisseur de projet VS -> Make qui existe ne fonctionne qu'avec
+> des projets VS.Net pas VS2005.
+>
+ok, n'hesite pas à livrer eventuellement un makefile spécifique pour 
+Linux.. on essayera de maintenir les 2 à jour si on ajoute/retire des 
+fichiers du projets
+
+> Et la versions de Monodevelop que j'ai ne build que pour C#1.0 donc il
+> va faloir que je compile Monodevelop depuis le CVS.
+>
+> Si non je préviendrait dès que j'arrive à l'utiliser sous linux. La
+> partie qui demanderas surement des adaptation est tout ce qui conserne
+> la fenêtre de VLC (Afficher / Cacher) et l'interface graphique (Si les
+> forms ne fonctionnent pas assez bien je séparerait surement dans 2
+> assemblies l'interface et le reste du code pour faire une interface
+> GTK.
+
+je pense n'avoir utilisé que des fonctions relativement basiques des 
+Forms, donc j'espère que ca marchera correctement
+ce serait compliqué d'avoir à maintenir 2 interfaces utilisateur en 
+paralelle
+
+Pour la fenetre de VLC, c'est secondaire si tu n'arrive pas à la cacher
+
+
+
+
+From virtualblackfox at gmail.com  Tue Jun 13 23:21:45 2006
+From: virtualblackfox at gmail.com (Black Fox)
+Date: Tue, 13 Jun 2006 23:21:45 +0200
+Subject: [FreeXplorer-dev] fonds transparents & unix
+In-Reply-To: <448EF318.8070501@free.fr>
+References: <448CA74B.3080802@free.fr>
+	 <5dabfcac0606130044m1fc98df3r1ce6bd2e8827128d@mail.gmail.com>
+	 <448EF318.8070501@free.fr>
+Message-ID: <5dabfcac0606131421u3a482723j692d906f2fb6e6cb@mail.gmail.com>
+
+> > J'ai mis du transparent normalement à part si mon gimp à du mal :D
+>
+> ben... je crois que ton gimp a du mal ^^
+
+Même en re-ouvrant le fichier folder.gif par exemple le background est
+bien transparent chez moi (Et pourtant il y à du blanc dans l'image
+donc ça ne peut pas être le blanc [255-255-255] qui est remplacé par
+la transparence)
+
+> ok, n'hesite pas à livrer eventuellement un makefile spécifique pour
+> Linux.. on essayera de maintenir les 2 à jour si on ajoute/retire des
+> fichiers du projets
+
+J'ai buildé monodevelop depuis les sources et re-fait des projets dans
+son format (.mdp) évidement il faudra le maintenir synchronisé avec
+les .csproj ...
+
+> je pense n'avoir utilisé que des fonctions relativement basiques des
+> Forms, donc j'espère que ca marchera correctement
+> ce serait compliqué d'avoir à maintenir 2 interfaces utilisateur en
+> paralelle
+
+Après test il faudras surement une interface différente.
+Mono supporte bien les forms du .Net 1.0 par contre celle du 2.0 il
+lui manque beaucoup de fonctionnalitées pour les supporter.
+
+Je pense que je vais retourner sous windows et séparer l'interface du
+code de chargement de la config puis extraire l'interface dans un
+assembly différent.
+En suite je créerait un FreeXplorerConsole qui ne nécessite pas
+d'interface graphique (Et qui n'est donc configurable qu'en éditant le
+fichier XML) et adapterait tout ça sous linux.
+
+Pour info les quelques choses qui manquent sur la version actuelle de
+mono pour compiler le code à par les forms c'est :
+ - System.IO.File.ReadAllText (
+http://bugzilla.ximian.com/show_bug.cgi?id=77813 ), facile à émuler
+avec un StreamReader.ReadToEnd().
+ - TCPListener.Server car ce membre est privé (Je vais leur envoyer un
+mail mais il faut dabord que je vérifie si il à toujour été public ou
+si c'est un changement dans le 2.0.
+ - La classe Registry et tout ce qui est dans Microsoft.Win32
+(Logique), pour la gestion des types Mime par exemple
+
+Evidement une fois compilé il y auras surement d'autres problèmes à
+l'exécution mais je n'en suis pas là :-D
+
+
+From freexplorer at free.fr  Wed Jun 14 00:30:21 2006
+From: freexplorer at free.fr (Wizou)
+Date: Wed, 14 Jun 2006 00:30:21 +0200
+Subject: [FreeXplorer-dev] fonds transparents & unix
+In-Reply-To: <5dabfcac0606131421u3a482723j692d906f2fb6e6cb@mail.gmail.com>
+References: <448CA74B.3080802@free.fr>	 <5dabfcac0606130044m1fc98df3r1ce6bd2e8827128d@mail.gmail.com>	 <448EF318.8070501@free.fr> <5dabfcac0606131421u3a482723j692d906f2fb6e6cb@mail.gmail.com>
+Message-ID: <448F3C7D.5000100@free.fr>
+
+en tout cas, chapeau pour l'effort de portage !!
+tu pense pas que le portage des WinForms 2.0 sera rapidement fait dans 
+mono ?
+
+(pour les images GIF, je viens de vérifier, la transparence est bonne, 
+mea culpa)
+
+
+
+From virtualblackfox at gmail.com  Wed Jun 14 02:07:43 2006
+From: virtualblackfox at gmail.com (Black Fox)
+Date: Wed, 14 Jun 2006 02:07:43 +0200
+Subject: [FreeXplorer-dev] fonds transparents & unix
+In-Reply-To: <448F3C7D.5000100@free.fr>
+References: <448CA74B.3080802@free.fr>
+	 <5dabfcac0606130044m1fc98df3r1ce6bd2e8827128d@mail.gmail.com>
+	 <448EF318.8070501@free.fr>
+	 <5dabfcac0606131421u3a482723j692d906f2fb6e6cb@mail.gmail.com>
+	 <448F3C7D.5000100@free.fr>
+Message-ID: <5dabfcac0606131707ga8905cq7acc54cd6bcbac39@mail.gmail.com>
+
+> en tout cas, chapeau pour l'effort de portage !!
+> tu pense pas que le portage des WinForms 2.0 sera rapidement fait dans
+> mono ?
+
+Non ils en sont à finnir le WinForm 1.0 donc j'ai un doute.
+Ils ont mis du temps car ils ont longtemps essayé de l'implémenter en
+utilisant Wine (Emulateur windows) mais au final ils sont en train de
+tout re-ecrire en C#. Ca commence à bien marcher pour les WinForm 1.0
+mais pour les 2.0 je pense qu'on peut encore attendre au moins 6mois -
+1an...
+
+
